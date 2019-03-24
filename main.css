@@ -1,0 +1,8 @@
+charset "UTF-8";
+
+body{ 
+	font-family:Inconsolata;
+	font-size: 2.5vmin;
+	background-color: #EEEEEE;
+	color: #444;
+}
