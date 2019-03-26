@@ -1,29 +1,105 @@
 <!DOCTYPE html>
 <html>
-<title>imaxblue</title>
+<title>Kevin Junyang Cui</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hello lost soul! You are safe now c: On of few admins on wcipeg.com. Let me know if you find some errors in problem statement or time/memory limits and such. However, I am only on the lower ranks of wcipeg administration. Contact Alex Li or Jacob Plachta if you have nontrivial issues with the site. Please don't ask about Nowruz, it'll happen eventually. Please feel free to join us on slack or discord if you want to participate in the community! Slack link at the bottom of any dmoj page, and discord registration can be done by PM-ing kobortor#4541.">
+<meta name="author" content="imaxblue">
 <link rel="stylesheet" href="main.css">
+<link rel="icon" href="imaxblue.png">
 
 <body>
 
 <div>    
      <header id="title">
 	 <br>
+	  <img id="logo" src="imaxblue.png" alt="logo">
 	  <h1>imaxblue</h1>
 	  <br>
-	</header>
+	</header id="sub">
 	<br>
-	<h2>His Holiness, St. Blue: Pope of Triway</h2>
-	
+	<h2 id="sub">Brian Chaur</h2>
 	<br>
 	<nav id="navbar">
-		<img id="logo" src="neko.jpg" alt="logo">
-		<a id="text" href="https://www.reddit.com/r/imaxblue" title="imaxblue">Subreddit</a>
-		<a id="text" href="https://discord.gg/rbECEDt" title="imaxblue">Discord</a>
+		<a id="text" href="index.html" title="About Me"><img id="smlogo" src="neko.png" alt="smlogo"></a>
+        	<a id="text" href="https://discord.gg/87VP6XK" target="_blank" title="Discord"><img id="smlogo" src="discord.png" alt="smlogo"></a>
+		<a id="text" href="https://www.reddit.com/r/imaxblue/" target="_blank" title="Reddit"><img id="smlogo" src="reddit.png" alt="smlogo"></a>
 		<br>
 	</nav>
+	<br>
+	<br>
 </div>
+<div>
+	<aside id="bigtxt">
+		<h3 id="subtitle">What I do</h3>
+		<p id="subtitle">My name is Brian Chau and I like music, teaching, math and helping people. I also play hearthstone and run cross country(5-10km). I like cute girls, cute cacti, bubble tea and fluffy everything. Note: I like the idea of cute girls and one specific cute 3-D girl, not all cute girls at the same time. That would be unethical. Greedily devours greedy problems.</p>
+		<br>
+		<br>
+	</aside>
+	
+	<section id="vid">
+		<br>
+		<br>
+		<br>
+		<br>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/X-cfWM0BC_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</section>
+</div>
+<br>
+<div>
+	<section id="work" href="work.html">
+		<br>
+		<h4>My Work</h4 id="work">
+		<img src="dab.png" id="workIcon" href="work.html"><br>
+		<br>
+		<br>
+		<p id="workSub">My power</p>
+		<p id="desc">I am eternity given birth by desire, the shadow caused by god, pandamonium was filled with light, heaven filled with darkness, look at the times, no matter how hard people struggle their fates are in our hands.</p>
+		<br>
+		<br>
+		<br>
+	</section>
+</div>
+
+<script>
+window.addEventListener('scroll', scrollFunction);
+function scrollFunction() {
+  if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110) {
+	document.getElementById("work").style.fontSize = "100%";
+  }
+  else if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+   	document.getElementById("title").style.fontSize = "80%";
+	document.getElementById("logo").style.height = "15%";
+	document.getElementById("logo").style.width = "15%";
+	document.getElementById('sub').style.color = '#EEF1EF';
+	document.getElementById('title').style.color = '#7D98A1';
+	document.getElementById("subtitle").style.fontSize = "500%";
+	  document.getElementById("work").style.fontSize = "75%";
+  } else {
+    	document.getElementById("title").style.fontSize = "100%";
+	document.getElementById("logo").style.height = "30%";
+	document.getElementById("logo").style.width = "30%";
+	document.getElementById('sub').style.color = '#7D98A1';
+	document.getElementById('title').style.color = '#EEF1EF';
+	document.getElementById("subtitle").style.fontSize = "300%";
+	document.getElementById("work").style.fontSize = "75%";
+  }
+}
+window.addEventListener('scroll', myFunction);
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+window.onscroll = function() {
+	myFunction();
+	scrollFunction();
+}
+</script>
 
 </body>
 
